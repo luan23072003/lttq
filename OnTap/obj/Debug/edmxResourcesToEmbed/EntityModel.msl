@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="qlrapchieuphimModelStoreContainer" CdmEntityContainer="qlrapchieuphimEntities">
+    <EntitySetMapping Name="Phims">
+      <EntityTypeMapping TypeName="qlrapchieuphimModel.Phim">
+        <MappingFragment StoreEntitySet="Phim">
+          <ScalarProperty Name="MaDon" ColumnName="MaDon" />
+          <ScalarProperty Name="TenPhim" ColumnName="TenPhim" />
+          <ScalarProperty Name="QuocGia" ColumnName="QuocGia" />
+          <ScalarProperty Name="TheLoai" ColumnName="TheLoai" />
+          <ScalarProperty Name="NgayCongChieu" ColumnName="NgayCongChieu" />
+          <ScalarProperty Name="DoTuoiQuiDinh" ColumnName="DoTuoiQuiDinh" />
+          <ScalarProperty Name="DinhDang" ColumnName="DinhDang" />
+          <ScalarProperty Name="PhuThu" ColumnName="PhuThu" />
+          <ScalarProperty Name="GiaTienPhuThu" ColumnName="GiaTienPhuThu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

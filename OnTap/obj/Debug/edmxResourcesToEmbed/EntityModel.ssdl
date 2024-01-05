@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="qlrapchieuphimModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Phim">
+    <Key>
+      <PropertyRef Name="MaDon" />
+    </Key>
+    <Property Name="MaDon" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenPhim" Type="nvarchar" MaxLength="50" />
+    <Property Name="QuocGia" Type="nvarchar" MaxLength="50" />
+    <Property Name="TheLoai" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayCongChieu" Type="datetime" />
+    <Property Name="DoTuoiQuiDinh" Type="int" />
+    <Property Name="DinhDang" Type="nvarchar" MaxLength="50" />
+    <Property Name="PhuThu" Type="nvarchar" MaxLength="50" />
+    <Property Name="GiaTienPhuThu" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityContainer Name="qlrapchieuphimModelStoreContainer">
+    <EntitySet Name="Phim" EntityType="Self.Phim" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
